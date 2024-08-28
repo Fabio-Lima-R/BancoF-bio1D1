@@ -14,7 +14,7 @@ programa {
         leia (password)
         se (password == senha){
         enquanto(menu != 0){
-        escreva("|----------MENU----------\n")
+        escreva("\n|----------MENU----------\n")
         escreva("| 1-SALDO  R$", saldo, "\n")
         escreva("| 2-SAQUE                \n")
         escreva("| 3-DEPOSITO             \n")
@@ -45,7 +45,7 @@ programa {
             
           }
           se(saque > saldo){
-            escreva("N„o autorizado!\n")
+            escreva("N√£o autorizado!\n")
             escreva("Aperte ENTER para continuar")
             leia(controle)
             limpa()
@@ -62,7 +62,7 @@ programa {
           }
 
           senao{
-            escreva ("Senha Inv·lida.\n")
+            escreva ("Senha Inv√°lida.\n")
           }
           pare
           caso 3:
